@@ -5,9 +5,10 @@ from acorta.models import Urls
 
 # Create your views here.
 
+
 @csrf_exempt
 def barra(request):
-    lista = Urls.objects.all();
+    lista = Urls.objects.all()
     if request.method == "GET":
         response = ("<form method = 'POST'>" +
                     "Introduce la URL que quieres acortar: " +
